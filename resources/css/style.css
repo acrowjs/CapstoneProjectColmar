@@ -183,7 +183,7 @@ main .mobile{
 
 #panel2 .left .image{
 	padding-right: 1rem;
-	margin: 1rem;
+	margin: 0.5rem;
 	border: solid 2px green;
 }
 
@@ -196,16 +196,18 @@ main .mobile{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	border: solid 1px orange;
 }
 
 #panel2 .left .context h1{
-	font-size: 2rem;
-	line-height: 1.5;
+	font-size: 2.2rem;
+	line-height: 1.2;
+	
 }
 
 #panel2 .left .context p{
-	font-size: 1.2rem;
-	line-height: 1.5;
+	font-size: 0.8rem;
+	line-height: 1.8;
 }
 
 #panel2 .left .context h4{
