@@ -12,7 +12,7 @@ html{
 	
 	
 /*Header*/
-.desktop{
+header .desktop{
 	display: flex;
 	width: 100%;
 	height: 3.5rem;
@@ -37,11 +37,56 @@ header .left{
 
 .left span {
 	font-size: 2rem;
-	padding-left: 0.5rem;
+	padding-left: 0.4rem;
 }
-
 
 header .right{
 	margin-right: 2rem;
 	padding: 0.5rem;
+}
+
+	/*Main*/
+/*panel 1*/
+#panel1{
+	width: 100%;
+	height: 50rem;
+	display: flex;
+	border: solid 2px green;
+	align-items: center;
+	background-color: beige;
+}
+
+.image{
+	padding: 2rem;
+}
+
+main .context{
+	width: 90%;
+	height: 83%;
+	border: dashed 2px blue;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: column wrap;
+	margin-right: 2rem;
+	background-color: white;
+}
+
+.context h1{
+	font-size: 4rem;
+}
+
+.context h3{
+	font-size: 2rem;
+}
+
+.context .button{
+	width: 60%;
+	height: 8rem;
+	background-color: brown;
+	color: beige;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
 }
