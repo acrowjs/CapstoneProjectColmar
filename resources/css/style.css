@@ -1,170 +1,120 @@
-html{
-	font-size: 18px;	
-}
+ html{
+ 	font-size: 18px;	
+ }
+ 
+ .bold{
+ 	font-weight: bold;
+ }
+ 
+ .grey{
+ 	color: grey;
+ }
+ 
 
-.bold{
-	font-weight: bold;
-}
-
-.grey{
-	color: grey;
-}
-	
-	
-/*Header*/
-header .desktop{
+ .d{
 	display: flex;
-	width: 100%;
-	height: 3.5rem;
-	border: solid 2px blue;
-	justify-content: space-around;
-	align-items: center;
 }
 
-header .mobile{
-	display: none;
-}
 
-header .push{
-	flex: 1 1 auto;
+ .m{
+	display: none;	
 }
+ 	
+ /*Header*/ 
 
-header .left{
-	display: flex;
-	align-items: center;
-}
-
-.left img{
-	height: 3rem;
-	padding: 0.5rem;
-}
-
-.left span {
-	font-size: 2rem;
-	padding-left: 0.4rem;
-}
-
-header .right{
-	margin-right: 2rem;
-	padding: 0.5rem;
-}
-
-@media only screen and (max-width: 470px){
-	header .desktop{
-		display:none;
-	}
+ .desktop-nav{
+ 	display: flex;
+ 	width: 100%;
+ 	height: 3.5rem;
+ 	border: solid 2px blue;
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+  
+ header .push{
+ 	flex: 1 1 auto;
+ }
+ 
+ header .left{
+ 	display: flex;
+ 	align-items: center;
+ }
+ 
+ .left img{
+ 	height: 3rem;
+ 	padding: 0.5rem;
+ }
+ 
+ .left span {
+ 	font-size: 2rem;
+ 	padding-left: 0.4rem;
+ }
+ 
+ header .right{
+ 	margin-right: 2rem;
+ 	padding: 0.5rem;
+ }
 	
-	header .mobile{
-		display: flex;
-		width: 100%;
-		height: 2rem;
-		align-items: center;
-		justify-content: space-around;
-	}
-}
 
-	/*Main*/
-/*panel 1*/
+  	/*Main*/
+  /*panel 1*/
+.center{
+	display: flex;
+	flex-direction: column;
+	
+}
+  
+  
  #panel1{
-	width: 100%;
-	height: 50rem;
-	display: flex;
-	border: solid 2px green;
-	align-items: center;
-	background-color: beige;
-}
+  	width: 100%;
+  	height: 50rem;
+  	display: flex;
+ 	border: solid 2px green;
+ 	align-items: center;
+  	background-color: beige;
+  }
+  
 
-#panel1 .image{
-	padding: 2rem;
-}
+ #panel1.image{
+  	padding: 2rem;
+  }
+  
 
-#panel1 .context{
-	width: 90%;
-	height: 83%;
-	border: dashed 2px blue;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-flow: column wrap;
-	margin-right: 2rem;
-	background-color: white;
-}
+ #panel1 .context{
+  	width: 90%;
+  	height: 83%;
+  	border: dashed 2px blue;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-around;
+ 	flex-flow: column wrap;
+ 	
+  	background-color: white;
+  }
+  
 
-#panel1 .context h1{
-	font-size: 4rem;
-}
+ #panel1 h1{
+  	font-size: 3rem;
+  }
+  
 
-#panel1 .context h3{
-	font-size: 2rem;
-}
+ #panel1 h3{
+  	font-size: 1rem;
+  }
+  
 
-#panel1 .context .button{
-	width: 60%;
-	height: 8rem;
-	background-color: brown;
-	color: beige;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 3rem;
-}
-
-main .mobile{
-	display: none;
-}
-/*main mobile rules*/
-@media only screen and (max-width: 470px){
-	main .desktop{
-		display: none;
-	}
-	main .mobile{
-		width: 100%;
-		height: 40rem;
-		display: flex;		
-	}
-	
-	main .mobile #panel1{
-		background-color: beige;
-	}
-	
-	main .mobile img{
-		width: 100%;
-		margin-bottom: 1rem;
-	}
-	
-	main .mobile .context{
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-	}
-	
-	main .mobile .context h1{
-		font-size: 3rem;
-		padding: 1rem;
-	}
-
-	main .mobile .context h3{
-		font-size: 1.25rem;
-		line-height: 1.1;
-	}
-	
-	.mobile .context .button{
-		width: 14rem;
-		height: 5rem;
-		background-color: brown;
-		color: beige;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 3rem;
-		margin-top: 2rem;
-	}
-	
-}
-
-
-/*Panel 2*/
+ #panel1 .button{
+  	width: 60%;
+  	height: 6rem;
+  	background-color: brown;
+ 	color: beige;
+ 	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 2rem;
+ }
+ 
+ /*Panel 2*/
 #panel2{
 	width: 100%;
 	height: 52rem;
@@ -220,3 +170,75 @@ main .mobile{
 	width: 40%;
 	height: 48rem;
 }
+ 
+ /*------------------------------------------mobile-------------------------------------------------------------------------------------------------------------------*/ 
+	
+  @media only screen and (max-width: 470px){
+	.d{
+ 		display:none;
+ 	}
+ 	
+	.m{
+ 		display: flex;
+ 	}	
+/*-----------Header----------------------------------*/
+	.mobile-nav{
+		display: flex;
+ 		width: 100%;
+ 		height: 2rem;
+ 		align-items: center;
+ 		justify-content: space-around;
+		background-color: beige;
+		padding: 0.5rem;
+	}
+	
+	.mobile-nav span{
+		padding: 0.25rem;
+		background-color: yellow;
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1em 1em;
+	}
+	/*Body*/ 
+/*--------Panel1--------------------*/
+	#mpanel1{
+ 		background-color: beige;
+ 	}
+ 	
+ 	#mpanel1 img{
+ 		width: 100%;
+ 		margin-bottom: 1rem;
+ 	}
+ 	
+ 	#mpanel1 .context{
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		align-items: center;
+ 		justify-content: center;
+ 	}
+ 	
+ 	#mpanel1 h1{
+ 		font-size: 3rem;
+ 		padding: 1rem;
+ 	}
+ 
+ 	#mpanel1 h3{
+ 		font-size: 1.25rem;
+ 		line-height: 1.1;
+ 	}
+ 	
+ 	#mpanel1 .button{
+ 		width: 14rem;
+ 		height: 5rem;
+ 		background-color: brown;
+ 		color: beige;
+ 		display: flex;
+		align-items: center;
+ 		justify-content: center;
+ 		font-size: 3rem;
+		margin-top: 2rem;
+	}
+ }
