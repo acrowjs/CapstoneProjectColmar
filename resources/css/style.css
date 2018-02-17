@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------------------Desktop------------------------------------------------------------------------------------------------*/
+
+/*--Universals--*/
  html{
  	font-size: 18px;	
  }
@@ -7,10 +10,13 @@
  }
  
  .grey{
- 	color: grey;
+ 	color: rgb(128,128,128);
  }
  
-
+.white{
+	background-color: rgb(255,255,255); 
+ }
+ 
  .d{
 	display: flex;
 }
@@ -19,9 +25,8 @@
  .m{
 	display: none;	
 }
- 	
- /*Header*/ 
-
+ 
+/*--Header--*/ 
  .desktop-nav{
  	display: flex;
  	width: 100%;
@@ -45,7 +50,7 @@
  	padding: 0.5rem;
  }
  
- .left span {
+ .left span{
  	font-size: 2rem;
  	padding-left: 0.4rem;
  }
@@ -55,26 +60,24 @@
  	padding: 0.5rem;
  }
 
- header a{
+ .desktop-nav a{
 	text-decoration: none;
 	background-color: rgb(255,255,220);
 	padding: 0.5rem;
 	border-radius: 2em 2em;
  }
  
- header a:hover{
+ .desktop-nav a:hover{
 	background-color: rgb(210,180,140);
-	transition: background-color 1s ease-out;
+	transition: background-color 2s ease-out;
  }
+/*--Main--*/
 
-  	/*Main*/
-  /*panel 1*/
+/*--Panel 1--*/
 .center{
 	display: flex;
 	flex-direction: column;
-	
 }
-  
   
  #panel1{
   	width: 100%;
@@ -107,7 +110,7 @@
     
   #panel1 .context:hover{
 	opacity: 0.9;
-	transition: opacity 1s;
+	transition: opacity 3s;
   }
 
  #panel1 h1{
@@ -141,7 +144,7 @@
 	text-decoration: none;
  }
  
- /*Panel 2*/
+/*--Panel 2--*/
  #panel2{
 	width: 100%;
 	height: 52rem;
@@ -170,12 +173,12 @@
 	height: auto;	
 }	
 
- #panel2 .left .context {
+ #panel2 .left .context{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
-	background-color: rgb(255,255,255);
+	background-color: rgb(20,60,20);
 	width: 95%;
 	height: 90%;
 	margin-left: 2.5%;
@@ -187,7 +190,6 @@
 	font-size: 1.8em;
 	line-height: 1.2;
 	padding: 0.5em;
-	
 }
 
  #panel2 .left .context p{
@@ -201,10 +203,9 @@
 	font-size: 1em;
 	line-height: 2;
 	padding: 0.5em;
-	
 }
 
-/*===========================================================================*/
+/*--Right--*/
  #panel2 .right{
 	width: 40%;
 	height: 100%;
@@ -236,10 +237,9 @@
  #panel2 .right .images{
 	width: 35%;
 	height: auto;
-	
 	padding-left: 1.25rem;
-
 }
+
  #panel2 .right .images img{
 	width: 100%;
 	height: auto;
@@ -252,7 +252,6 @@
 	flex-direction: column;
 	justify-content: space-around;
 	padding-left: 0.5rem;
-	background-color: rgb(255,255,255);
 	margin-left: 1.25rem;
 	border-radius: 1em 1em;
  }
@@ -278,22 +277,37 @@
 	color: rgb(220,20,60);
  }
 
- /*------------------------------------------mobile-------------------------------------------------------------------------------------------------------------------*/ 
+/*--Footer--*/
+ footer .d{
+	background-color: rgb(0,0,0);
+	color: rgb(250,250,250);
+	font-size: 0.8rem;
+	padding-left: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+ }
+ 
+/*------------------------------------------------------------------------Mobile----------------------------------------------------------------------------------------------------*/ 
 	
   @media only screen and (max-width: 470px){
+/*----Universals----*/
 	.d{
  		display:none;
  	}
- 	
+	
+ 	.desktop-nav{
+		display:none;
+	}
+	
 	.m{
  		display: flex;
 		flex-direction: column;
 		width: 100%;
 		z-index: 1;
 		position: ralative;
-		
  	}	
-/*-----------Header----------------------------------*/
+	
+/*----Header----*/
 	.mobile-nav{
 		display: flex;
  		width: 100%;
@@ -321,10 +335,10 @@
 	
 	.mobile-nav span:active{
 		background-color: rgb(5, 110, 60);
-		transition: background-color 0.5s ease;
 	}
-	/*Body*/ 
-/*--------Panel1--------------------*/
+/*----Main----*/ 
+
+/*----Panel 1----*/
 	#mpanel1{
  		background-color: rgb(135,206,235);
 		width: 100%;
@@ -342,8 +356,8 @@
  		flex-flow: row wrap;
  		align-items: space-around;
  		justify-content: center;
-		padding-bottom:2rem;
-		width:90%;
+		padding-bottom: 2rem;
+		width: 90%;
 		margin-left: 5%;
  	}
  	
@@ -369,19 +383,17 @@
  		font-size: 1.5rem;
 		margin-top: 2rem;
 		border-radius: 1em 1em;
-		
 	}
+	
 	#mpanel1 .button a{
 		text-decoration: none;
 	}
 	
 	#mpanel1 .button a:active{
 		color: rgb(135,206,235);
-		
-
 	}
 	
-/*------Panel2-------------------*/
+/*----Panel2----*/
 	#mpanel2{
 		width: 100%;
 		height: 71rem;
@@ -390,7 +402,6 @@
 	}
 	
 	#mpanel2 .table{
-	
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -404,8 +415,6 @@
 		margin-left:5%;
 		padding-top: 2rem;
 		padding-bottom: 1.5rem;
-		
-		
 	}
 	
 	#mpanel2 .bg1{
@@ -422,7 +431,6 @@
 	
 	#mpanel .bg3 h2{
 		font-size: 1.3rem;
-		
 	}
 	
 	#mpanel2 .table .images img{
@@ -445,20 +453,20 @@
 		margin-right: 10%;
 		margin-left: 7%;
 		line-height: 1.2;
-		background-color: white;
+		background-color: rgb(255,255,255);
 		margin-bottom: 2rem;
 		font-family: 'Cutive Mono', monospace;
 	}
 	
 	#mpanel2 .context:hover{
 		transform: translateX(0.9em);
-		
 	}
 	
 	#mpanel2 h2{
 		font-size: 1.2rem;
 		padding-top: 0.5rem;
 	}
+	
 	#mpanel2  p{
 		font-size: .7rem;
 	}
@@ -472,17 +480,17 @@
 		color: rgb(135,206,235);
 		transition: color 0.5s ease;
 	}
-/*----------Panel3----------------*/
+	
+/*----Panel3----*/
 	#mpanel3{
 		width: 100%;
 		height: 45rem;
-		background-color:rgb(255,255,255);
+		background-color: rgb(255,255,255);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		padding-top: 0.5rem;
-		
 	}
 	
 	#mpanel3 .top-context{
@@ -496,7 +504,6 @@
 		padding-left: 0.5rem;
 		background-color: rgb(243,250,253);
 		border-radius: 3em 3em;
-		
 	}
 	
 	#mpanel3 .context{
@@ -518,7 +525,7 @@
 		transition: margin-left 0.5s, color 1s;
 	}
 	
-/*--------Panel4-------------*/
+/*----Panel4----*/
 	#mpanel4 {
 		width: 100%;
 		height: 20rem;
@@ -538,15 +545,15 @@
 	#mpanel4 .video{
 		padding-top: 2rem;
 	}
-/*------Footer-------------*/
+	
+/*----Footer----*/
 	footer p{
 		margin-left: 1rem;
 		font-size: 0.5rem;
 		padding: 0.5rem;
-		
 	}
 	
 	footer{
-		background-color:rgb(243,250,253);
+		background-color: rgb(243,250,253);
 	}
  }
