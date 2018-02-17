@@ -26,7 +26,7 @@
  	display: flex;
  	width: 100%;
  	height: 3.5rem;
- 	border: solid 2px blue;
+ 	background-color: rgb(245,245,220);
  	justify-content: space-around;
  	align-items: center;
  }
@@ -54,7 +54,18 @@
  	margin-right: 2rem;
  	padding: 0.5rem;
  }
-	
+
+ header a{
+	text-decoration: none;
+	background-color: rgb(255,255,220);
+	padding: 0.5rem;
+	border-radius: 2em 2em;
+ }
+ 
+ header a:hover{
+	background-color: rgb(210,180,140);
+	transition: background-color 1s ease-out;
+ }
 
   	/*Main*/
   /*panel 1*/
@@ -69,8 +80,7 @@
   	width: 100%;
   	height: 40rem;
   	display: flex;
- 	border: solid 2px green;
-  	background-color: beige;
+  	background-color: rgb(245,245,220);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -81,14 +91,6 @@
 	padding-top: 3rem;
 	padding-bottom: 5rem;
   }
-  
-
- /*#panel1 .image{
-  	display: flex;
-	justify-content: center;
-	padding-top: 2rem;
-  }*/
-  
 
  #panel1 .context{
 	width: 55.56rem;
@@ -105,6 +107,7 @@
     
   #panel1 .context:hover{
 	opacity: 0.9;
+	transition: opacity 1s;
   }
 
  #panel1 h1{
@@ -121,8 +124,8 @@
  #panel1 .button{
   	width: 60%;
   	height: 4rem;
-  	background-color: brown;
- 	color: beige;
+  	background-color: rgb(165,42,42);
+ 	color: rgb(245,245,220);
  	display: flex;
   	align-items: center;
   	justify-content: center;
@@ -131,7 +134,11 @@
  }
  
  #panel1 .button:active{
-	background-color: red;
+	background-color: rgb(220,20,60);
+ }
+ 
+ #panel1 .button a{
+	text-decoration: none;
  }
  
  /*Panel 2*/
@@ -139,22 +146,23 @@
 	width: 100%;
 	height: 52rem;
 	display: flex;
-	border: solid 2px blue;
+	background-color:rgb(40,0,0);
 	align-items: center;
 }
 
  #panel2 .left{
-	border: dashed 2px green;
 	width: 60%;
 	height: 48rem;
 	display: flex;
 	flex-direction: column;
+	background-color: rgb(20,60,20);
+	margin-left: 1rem;
 }
 
  #panel2 .left .image{
 	padding-right: 1rem;
 	margin: 0.5rem;
-	border: solid 2px green;
+	background-color: rgb(20,60,20);
 }
 
  #panel2 .left .image img{
@@ -167,54 +175,109 @@
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
-	border: solid 1px orange;
-	width: 100%;
-	height: 100%;
+	background-color: rgb(255,255,255);
+	width: 95%;
+	height: 90%;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+	font-size: 1rem;
 }
 
  #panel2 .left .context h1{
-	font-size: 2.2rem;
+	font-size: 1.8em;
 	line-height: 1.2;
+	padding: 0.5em;
 	
 }
 
  #panel2 .left .context p{
-	font-size: 0.8rem;
+	font-size: 1.2em;
 	line-height: 1.8;
+	padding-left: 0.5em;
+	font-family: 'Cutive Mono', monospace;
 }
 
  #panel2 .left .context h4{
+	font-size: 1em;
 	line-height: 2;
+	padding: 0.5em;
+	
 }
 
 /*===========================================================================*/
  #panel2 .right{
-	border: dashed 2px red;
 	width: 40%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-
+	justify-content: center;
+	margin-left: 1rem;
+	background-color: rgb(50, 0, 50);
 }
  
  #panel2 .right .table{
-	width: 100%;
+	width: 28rem;
 	height: 33%;
-	border: solid 1px blue;
+	border-radius: 2em 2em;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+	background-color: rgb(245,245,220);
 }
+
+ #panel2 .right .table:hover{
+	background-color: rgb(210,180,140);
+	padding-left: 1rem;
+	transition: padding 1s ease 0.1s;
+ }
  
  #panel2 .right .images{
 	width: 35%;
 	height: auto;
-	border: solid 1px blue;
+	
+	padding-left: 1.25rem;
+
 }
  #panel2 .right .images img{
 	width: 100%;
 	height: auto;
 }
  
+ #panel2 .right .context{
+	width: 14rem;
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 0.5rem;
+	background-color: rgb(255,255,255);
+	margin-left: 1.25rem;
+	border-radius: 1em 1em;
+ }
  
+ #panel2 .right h2{
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding-left: 0.5em;
+ }
  
+ #panel2 .right p{
+	font-size: 1rem;
+	padding-left: 0.5em;
+ }
+ 
+ #panel2 .right span{
+	font-size: 0.8rem;
+	color: rgb(165,42,42);
+	padding-left: 0.5em;
+ }
+ 
+ #panel2 .right span:active{
+	color: rgb(220,20,60);
+ }
+
  /*------------------------------------------mobile-------------------------------------------------------------------------------------------------------------------*/ 
 	
   @media only screen and (max-width: 470px){
